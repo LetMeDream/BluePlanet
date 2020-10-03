@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<?php
+require 'leadsolution.class.php';
+$res = Leadsolution::handle('http://leadtowin.afiliasolution.com/leads');
+?>
+<html lang="en">
+<head>
+     <!-- Bootstrap 4 down here-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <!-- End bootstrap -->
+     <link type="text/css" rel="stylesheet" href="main.css" media="all" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blue Planet</title>
+    <script src="js/countdown.js"></script>
+</head>
+<body>
+    <div class='header'>
+
+        <img class='logo' src='img/bluePlanet.jpg' >
+
+    </div>
+
+    <div class='container-fluid sec1 d-none d-sm-block'>
+        <!-- These 2 guys are used one on top of the other-->
+
+        <div class='row s1'>
+            <div class="col-1"></div>
+
+            <div class='col-5'>
+
+                <h3 class='mt-5'><b>Disposa d'aigua a l'oficina.</b> </h3>
+
+                <h4 class='mt-4 ml-3'><b>Escull entre:</b></h4>
+                    <!--Fonts d'aigua-->
+                    <!--embotellada-->
+                <div class="row mt-4">
+                    <div class="col-8">
+                            <img src='img/check.png' width="22" height="22">
+                            <h5 style='display: inline-block;'><b>&nbsp;&nbsp;&nbsp;Fonts d'aigua embotellada </b></h5>
+                            <p class='text-justify'>
+
+                                    L’aigua embotellada de Blue Planet procedeix de la Font del Subirà, a Osor, dins el Parc
+
+                                    Natural del Montseny. L’aigua que brolla d’aquesta font es caracteritza per ser de
+
+                                    mineralització dèbil i baixa en sodi.
+                            </p>
+                    </div>
+                    <div class="col-4">
+                            <img src="img/filtro1.png" alt="" width=100 height="190">
+                    </div>
+
+                </div>
+                     <!--tractada-->
+                <div class="row mt-3">
+                        <div class="col-8">
+                                <img src='img/check.png' width="22" height="22">
+                                <h5 style='display: inline-block;'><b>&nbsp;&nbsp;&nbsp;Fonts d'aigua tractada </b></h5>
+                                <p class='text-justify'>
+                                        Som especialistes en els tractaments d’aigua de xarxa.
+                                        Us oferim dos sistemes de tractament per purificar l’aigua provinent de
+                                        la xarxa: la filtració i l’osmosi.
+
+                                </p>
+                        </div>
+                        <div class="col-4">
+                                <img src="img/filtro2.png" alt="" width=100 height="190">
+                        </div>
+
+                </div>
+                      <!--lagua-->
+                <div class="row mt-3">
+                            <div class="col-6">
+                                    <img src="img/lagua.png" alt="" width=240 height="230">
+                            </div>
+                            <div class="col-6">
+
+                            </div>
+
+                </div>
+
+            </div>
+
+
+            <div class='col-5'>
+                    <div class='overForm'>
+
+                    </div>
+
+                    <div class='overForm'>
+                        <div>
+                            <h3 class='text-center mesos'><b>5 MESOS GRATIS</b></h3>
+
+                        </div>
+
+                        <div class='row'>
+                            <div class="col-1"></div>
+                            <p class='mt-2 col-10 text-center' style='font-size: 30px; color:white;'>
+                                    <b> Durant el Maig demana un pressupost i et regalem 5 mesos de servei gratis.</b>
+                            </p>
+                            <div class="col-1"></div>
+                        </div>
+
+                            <!-- reloj -->
+                        <div class="row">
+
+                            <div class='col-2'></div>
+
+                            <div class='col-2'>
+                                <div class='tell'>
+                                    <h2 id='days' class='clockie'></h2>
+                                </div>
+                            </div>
+                            <div class='col-2 '>
+                                <div class='tell'>
+                                    <h2 id='hours' class='clockie'></h2>
+                                </div>
+                            </div>
+                            <div class='col-2'>
+                                <div class='tell'>
+                                    <h2 id='mins' class='clockie'></h2>
+                                </div>
+                            </div>
+                            <div class='col-2 '>
+                                <div class='tell'>
+                                    <h2 id='secs' class='clockie'></h2>
+                                </div>
+                            </div>
+
+                        </div>
+                            <!-- reloj -->
+                        <div class='row'>
+                                    <div class='col-1'></div>
+
+                                    <div class='col-2 ml-5 whiti'>
+                                        Dies
+                                    </div>
+                                    <div class='col-2  whiti'>
+                                        Hores
+                                    </div>
+                                    <div class='col-2 whiti'>
+                                        Minuts
+                                    </div>
+                                    <div class='col-2  whiti'>
+                                        Segons
+                                    </div>
+                                    <div class='col-2'></div>
+
+                        </div>
+                    </div>
+                    <div class='disForm container'>
+
+                        <div class='row'>
+                            <div class="col-1"></div>
+                            <div class="col-10"> <p style='color:white; font-size:22px;' class='text-center'>Demana el Pressupost sense compromís:</p></div>
+                            <div class="col-1"></div>
+
+                        </div>
+
+                        <div class='row'>
+                                <div class="col-1"></div>
+                                <div class="col-10">
+
+                                  <form method="POST">
+                                      <div class="row"><label for="nom">Nom:</label> </div>
+                                      <div class="row"><input name='firstname'  id="nom" class='inP' value='' type="text"></div>
+                                      <div class="row"><label for="email">Email:</label> </div>
+                                      <div class="row"><input name='email'  id='email' class='inP' value='' type="text"></div>
+                                      <div class="row"><label for="tel">Telèfon:</label></div>
+                                      <div class="row"><input name='mobile_phone' id=tel class='inP' value='' type="text"></div>
+                                      <div class="row"><label for="comen">Comentaris:</label></div>
+                                      <div class="row"><input id='comen' class='inP' value='' type="text"></div>
+                                      <div class="row">
+
+                                        <!-- los de siempre -->
+
+                                        <input type="hidden" name="source" value="<?=isset($_GET['source'])?$_GET['source']:'LGBLAPI'?>" />
+                                        <input type="hidden" name="id_country" value="1" />
+                                        <input type="hidden" name="format" value="json" />
+
+                                              <button class='butti' type='submit'>Sol·licita Pressupost</button>
+
+                                      </div>
+
+                                  </form>
+
+                                </div>
+                                <div class="col-1"></div>
+
+                            </div>
+
+                    </div>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+    </div>
+
+    <!-- Phone form and others START-->
+    <div class="container-fluid d-block d-sm-none formCel">
+            <div class='overFormC'>
+
+                </div>
+
+                <div class='overFormC'>
+                    <div>
+                        <p class='text-center mesosC'><b>5 MESOS GRATIS</b></p>
+
+                    </div>
+
+                    <div class='row'>
+                        <div class="col-1"></div>
+                        <p class='mt-2 col-10 text-justify' style='font-size: 15px; color:white;'>
+                                <b> Durant el Maig demana un pressupost i et regalem 5 mesos de servei gratis.</b>
+                        </p>
+                        <div class="col-1"></div>
+                    </div>
+
+                        <!-- reloj -->
+                    <div class="row">
+
+                        <div class='col-1'></div>
+
+                        <div class='col-2'>
+                            <div class='tellC'>
+                                <h2 id='days2' class='clockieC'></h2>
+                            </div>
+                        </div>
+                        <div class='col-2 '>
+                            <div class='tellC'>
+                                <h2 id='hours2' class='clockieC'></h2>
+                            </div>
+                        </div>
+                        <div class='col-2'>
+                            <div class='tellC'>
+                                <h2 id='mins2' class='clockieC'></h2>
+                            </div>
+                        </div>
+                        <div class='col-2 '>
+                            <div class='tellC'>
+                                <h2 id='secs2' class='clockieC'></h2>
+                            </div>
+                        </div>
+                        <div class='col-2'></div>
+
+
+                    </div>
+                    <div class='row'>
+                        <div class='col-1'></div>
+
+                        <div class='col-2 ml-1 whiti'>
+                            Dies
+                        </div>
+                        <div class='col-2  whiti'>
+                            Hores
+                        </div>
+                        <div class='col-2 whiti'>
+                            Mins
+                        </div>
+                        <div class='col-2  whiti'>
+                            Segons
+                        </div>
+                        <div class='col-2'></div>
+
+                    </div>
+                     <!-- reloj -->
+                    <div class='row'>
+                                <div class="col-1"></div>
+                                <div class="col-10"> <p style='color:white; font-size:16px; font-weight: 800;' class='mt-2 text-center'>Demana el Pressupost sense compromís:</p></div>
+                                <div class="col-1"></div>
+
+                    </div>
+                </div>
+                <div class='disFormC container'>
+
+
+
+                    <div class='row'>
+                            <div class="col-1"></div>
+                            <div class="col-10">
+
+                                <form method="POST">
+                                    <div class="row"><label for="nom2">Nom:</label> </div>
+                                    <div class="row">
+                                        <input id="nom2" class='inPC' name='firstname' value='' type="text">
+                                    </div>
+
+                                    <div class="row"><label for="email2">Email:</label> </div>
+                                    <div class="row">
+                                        <input id='email2' name='email'  class='inPC' value='' type="text">
+                                    </div>
+
+                                    <div class="row">
+                                        <label for="tel2">Telèfon:</label></div>
+                                    <div class="row"><input id='tel2' name='mobile_phone' class='inPC' value='' type="text">
+                                    </div>
+
+                                    <div class="row">
+                                        <label for="comen2">Comentaris:</label></div>
+                                    <div class="row"><input name='meta_coment' id='comen2' class='inPC' value='' type="text">
+                                    </div>
+
+
+
+                                    <div class="row">
+                                      <!-- los de siempre -->
+
+                                      <input type="hidden" name="source" value="<?=isset($_GET['source'])?$_GET['source']:'LGBLAPI'?>" />
+                                      <input type="hidden" name="id_country" value="1" />
+                                      <input type="hidden" name="format" value="json" />
+
+                                            <button class='butti' type='submit'>Sol·licita Pressupost</button>
+
+                                    </div>
+
+
+                                </form>
+
+                            </div>
+                            <div class="col-1"></div>
+
+                        </div>
+
+                </div>
+    </div>
+    <div class='container-fluid d-block d-sm-none phone2'>
+
+            <p class='text-center'>Disposa d'aigua a l'oficina. </p>
+            <p class='ml-4'>Escull entre:</p>
+            <div class='row'>
+                <div class="col-4">
+                    <img src="img/filtro1.png" alt="">
+                </div>
+                <div class="col-6">
+                    <p>
+                        <b class='smoli'> Fonts d'aigua embotellada</b>
+                    </p>
+                    <p class='smoler'>L’aigua embotellada de Blue Planet procedeix de la Font del Subirà, a Osor, dins el Parc Natural del Montseny.</p>
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+            <div class='row mt-3'>
+                    <div class="col-4">
+                        <img src="img/filtro2.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <b class='smoli'> Fonts d'aigua tractada</b>
+                        </p>
+                        <p class='smoler'>Som especialistes en els
+                            tractaments d’aigua de xarxa. Us oferim dos sistemes de tractament per purificar l’aigua provinent de la xarxa: la filtració i l’osmosi.
+
+                        </p>
+                    </div>
+                    <div class="col-2"></div>
+
+            </div>
+            <div class="row mt-3">
+                <img src="img/lagua.png" class='img-responsive d-block mx-auto' alt="">
+            </div>
+    </div>
+    <div class="container-fluid d-block d-sm-none phone3">
+        <div class="row row1">
+            <div class="col-1"></div>
+            <div class="col-10 colX">
+                <p class='text-justify smoler'>
+                        L’aigua embotellada de Blue Planet procedeix la Font del Subirà, a Osor, dins el Parc Natural del Montseny.
+                        L’aigua que brolla d’aquesta font es caracteritza per ser de mineralització dèbil i baixa en sodi.
+                </p>
+                <p class="text-justify smoler">
+                        De mineralització dèbil, indicada per a molts tipus de  dietes, especialment les dietes baixes en Sodi.
+                        És una aigua molt equilibrada en tots els seus components:
+                </p>
+                <ul>
+                    <li class='smoler text-center'>Baixa en Sodi</li>
+                    <li class='smoler text-center'>Baixa en Nitrats</li>
+                    <li class='smoler text-center'>Baixa en Bicarbonats </li>
+                    <li class='smoler text-center'>Baixa en Calci</li>
+                    <li class='smoler text-center'>Baixa en Clorurs</li>
+                </ul>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <div class="container-fluid d-block d-sm-none phone4">
+            <div class="row">
+                    <img src="img/segunda.png" height="350" width='80%' class='img-responsive d-block mx-auto' alt="">
+            </div>
+            <div class="row mt-1">
+                    <img src="img/cam.png" height="230" width='90%' class='img-responsive d-block mx-auto' alt="">
+            </div>
+    </div>
+    <!-- Phone form and others END-->
+    <div class="container-fluid section2 d-none d-sm-block">
+
+        <div class="row s2">
+            <div class="col-2"></div>
+            <div class='col-8 texto'>
+                <p class='text-center mt-5'>
+                        L’aigua embotellada de Blue Planet procedeix la Font del Subirà, a Osor, dins el Parc
+                        Natural del Montseny. L’aigua que brolla d’aquesta font es caracteritza per ser de mineralització dèbil i baixa en sodi.
+                </p>
+                <p class='text-center mt-4'>
+                    De mineralització dèbil, indicada per a molts tipus de  dietes, especialment les dietes baixes en
+                    Sodi. És una aigua molt equilibrada en tots els seus components:
+
+                </p>
+                <ul class='ml-3 '>
+                    <li>Baixa en Sodi </li>
+                    <li>Baixa en Nitrats</li>
+                    <li>Baixa en Bicarbonats </li>
+                    <li>Baixa en Calci </li>
+                    <li>Baixa en Clorurs
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid d-none d-sm-block">
+
+        <div class="section3 row">
+
+            <div class='col-2'></div>
+            <div class='col-9'>
+                <img class='img-fluid' src="img/primera.png" height=1000 alt="">
+            </div>
+            <div class='col-1'></div>
+
+        </div>
+
+    </div>
+
+    <div class="container section4 d-none d-sm-block">
+
+            <div class="row">
+
+                <div class='col-1'></div>
+                <div class='col-5'>
+                    <img class='img-fluid' src="img/cam.png" width= alt="">
+                </div>
+                <div class='col-5'>
+                    <div class='row'>
+                            <p class='text-left'>Blue Planet</p>
+                            <p class='text-justify'>
+
+                                    Som una empresa especialitzada en el subministre d’aigua de consum i cafè per a empreses i particulars, des de 1997. La nostra experiència i el nostre coneixement del sector ens ha fet evolucionar per oferir als nostres clients solucions eficaces i de qualitat.
+
+                                    Tant si voleu aigua tractadacom aigua embotellada, a Blue Planet t’oferim la millor opcióque s’adapti a les teves necessitats.
+
+                                    Treballem dia a dia oferint als nostres clients un servei de qualitat i confiança.
+                            </p>
+                    </div>
+                    <div class="row">
+                        <img src="img/sombra.png" class='img-fluid' alt="">
+                    </div>
+
+
+                </div>
+                <div class='col-1'></div>
+
+            </div>
+
+        </div>
+</body>
+</html>

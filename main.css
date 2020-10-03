@@ -1,0 +1,220 @@
+.header{
+    width:100%;
+    /*background-color: aqua;*/
+    height: 80px;
+
+}
+label{
+    color:white;
+}
+.logo{
+    margin-top:16px;
+    margin-left:156px;
+    width:233px;
+}
+.overForm{
+    width:436px;
+    height: 374px;
+    background-image: url('img/onTopOfForm.png');
+    position:absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(39, 79, 148,0.7);
+
+}
+.overFormC{
+    width:90%;
+    height: 374px;
+    background-image: url('img/onTopOfForm.png');
+    position:absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-repeat: no-repeat;
+    background-color: rgba(39, 79, 148,0.7);
+
+}
+.formCel{
+    height: 700px;
+}
+.disFormC{
+    position:absolute;
+    width:90%;
+    height: 360px;
+    top:374px;
+    background-color: #214A88;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.tellC{
+    background-color: white;
+    width:40px;
+    height: 40px;
+    border-radius:10px;
+    position: relative;
+}
+.mesosC{
+    padding-top: 10px;
+    color:#e9770b;
+    font-size: 20px;
+}
+.clockieC{
+    position:absolute;
+    top:18%;
+    left:14%;
+    color:rgb(11, 55, 151);
+    font-size:22px;
+    font-weight: 600;
+}
+.inPC{
+    border-radius: 3px;
+    width:100%;
+    height: 32px;
+    margin-bottom:4px;
+    border:none;
+}
+.smoli{
+    font-size:15px;
+}
+.smoler{
+    font-size:13px;
+}
+.phone2{
+    height: 500px;
+}
+.phone3{
+    height: 400px;
+}
+.row1{
+    margin-top:380px;
+}
+.colX{
+    border: 1px solid rgb(109, 109, 109);
+    border: 1px solid rgba(109, 109, 109, 0.2);
+}
+.whiti{
+    color:white;
+}
+
+.s1{
+    height:900px;
+
+}
+.sec1{
+
+    border-bottom: 1px solid rgb(109, 109, 109);
+    border-bottom: 1px solid rgba(109, 109, 109, 0.2);
+}
+.disForm{
+    position:absolute;
+    width:436px;
+    height: 500px;
+    top:374px;
+    background-color: #214A88;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.tell{
+    background-color: white;
+    width:58px;
+    height: 70px;
+    border-radius:10px;
+    position: relative;
+}
+.clockie{
+    position:absolute;
+    top:18%;
+    left:14%;
+    color:rgb(11, 55, 151);
+    font-size:38px;
+    font-weight: 600;
+}
+#days,#hours{
+    left:12%;
+
+}
+.texto{
+    margin-top:40px;
+
+    color:grey;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid rgb(109, 109, 109);
+    border: 1px solid rgba(109, 109, 109, 0.2);
+
+}
+.section2{
+    height:400px;
+    background: #fbfbfb;
+    border-bottom: 1px solid rgb(109, 109, 109);
+    border-bottom: 1px solid rgba(109, 109, 109, 0.2);
+}
+.section3{
+    height:1000px;
+
+}
+.section4{
+    height:400px;
+
+}
+.inP{
+    border-radius: 3px;
+    width:100%;
+    height: 45px;
+    margin-bottom:4px;
+    border:none;
+}
+.butti{
+    margin-top:10px;
+    width:100%;
+    height: 60px;
+    border-radius: 6px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color:#EA770C;
+  /* show a hand cursor on hover; some argue that we
+  should keep the default arrow cursor for buttons */
+    cursor: pointer;
+}
+.butti:hover{
+    background-color:#179457;
+}
+
+.mesos{
+    padding-top: 20px;
+    color:#e9770b;
+}
+
+/*  Startin media queries
+    Large devices (desktops, 992px and up)
+*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*
+    .sec1,.section2,.section4,.section3{
+        min-width:1199px;
+    }
+    */
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .sec1,.section2,.section4,.section3{
+        min-width:991px;
+    }
+ }
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .sec1,.section2,.section4,.section3{
+        min-width:991px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+
+    .logo{
+        margin-left:25%;
+        width:140px;
+    }
+
+   }
